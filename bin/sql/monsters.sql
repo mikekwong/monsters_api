@@ -16,9 +16,17 @@ CREATE TABLE lives (
   habitat varchar(50)
 );
 
+CREATE TABLE aliens (
+  id serial,
+  name varchar(50),
+  size varchar(50)
+);
+
 INSERT INTO monsters (name, personality)
     VALUES ('Fluffy', 'aggressive'), ('Noodles', 'impatient'), ('Rusty', 'passionate');
 INSERT INTO habitats (name, climate, temperature)
     VALUES ('desert', 'dry', 100), ('forrest', 'haunted', 70), ('mountain', 'icy', 30);
 INSERT INTO lives (monster, habitat)
     VALUES ('Fluffy', 'desert'), ('Noodles', 'forrest'), ('Rusty', 'mountain');
+INSERT INTO aliens (name, size)
+    VALUES ('Emo', 'small'), ('Scion', 'large'), ('Trippy', 'medium');
